@@ -1,26 +1,23 @@
 {
   "development": {
-    "username": "root",
-    "password": "root",
-    "database": "benderr_db",
-    "socket": "/Applications/MAMP/tmp/mysql/mysql.sock",
-    "port": "8889",
+    "username": "qsl9gvkyny78lvlu",
+    "password": "ss4h95ei6dps2jlw",
+    "database": "sbenderr_db",
+    "host": "yhrz9vns005e0734.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": "root",
-    "database": "benderr_db",
-    "socket": "/Applications/MAMP/tmp/mysql/mysql.sock",
-    "port": "8889",
+    "username": "qsl9gvkyny78lvlu",
+    "password": "ss4h95ei6dps2jlw",
+    "database": "sbenderr_db",
+    "host": "yhrz9vns005e0734.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": "root",
-    "database": "benderr_db",
-    "socket": "/Applications/MAMP/tmp/mysql/mysql.sock",
-    "port": "8889",
+    "username": "qsl9gvkyny78lvlu",
+    "password": "ss4h95ei6dps2jlw",
+    "database": "sbenderr_db",
+    "host": "yhrz9vns005e0734.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
 }
