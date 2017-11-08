@@ -1,0 +1,40 @@
+<div class="row">
+    <!-- <div class="col-xs-12 col-sm-8 col-md-4">
+        <div class="panel panel-default">
+            <h4>Welcome back, {{first_name}}!</h4>
+            <img src="{{profile_pic}}" alt="user image" class="img-thumbnail">
+        </div>
+    </div> -->
+    <div class="col-md-12" id="toprow">
+        <h2>Who's your best match to hangout with?</h2>
+        {{#each users}}
+        <div class="userProfiles" style="width: 20rem;">
+            <h4 class="card-title">{{first_name}} {{last_name}}</h4>
+            <img class="card-img-top" src={{profile_pic}} alt="user image">
+            <div class="card-block">
+                
+                <p class="card-text">"{{tag_line}}"</p>
+                <p class="card-text">{{user_name}}</p>
+                <p class="card-text">Age: {{age}}</p>
+                <p class="card-text">Phone: {{sms_phone}}</p><br>
+            </div>
+        </div>
+        {{/each}}
+        <!-- <div class="col-md-3">
+            <div class="userProfiles">
+                {{#each users}}
+                <img src="{{profile_pic}}" alt="user image" class="img-thumbnail">
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="userProfiles">
+                <h1>{{first_name}} {{last_name}}</h1>
+                <h3>Age: {{age}}</h3>
+                <br>
+                <h3>Phone: {{sms_phone}}</h3>
+                <br>
+                <hr> {{/each}}
+            </div>
+        </div> -->
+    </div>
+</div>

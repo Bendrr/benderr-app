@@ -1,0 +1,51 @@
+body {
+    background-image: url("../images/Drinking.jpg");
+    min-height: 550px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.navbar img {
+    width: 250px;
+    padding-left: 30px;
+}
+
+.form-group1 {
+    width: 200px;
+}
+
+.help-block {
+    color: #000000;
+}
+
+.row {
+    margin-top: 120px;
+}
+
+.div .col-xs-6 col-md-4 {
+    padding-top: 15px;
+    padding-left: 0px;
+    margin-left: 0px;
+    left: 275px;
+}
+
+.footer {
+    background-color: #fbb03b;
+    text-align: center;
+    padding: 10px;
+    color: #FFFFFF;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+}

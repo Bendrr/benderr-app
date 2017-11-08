@@ -1,0 +1,43 @@
+{{currentUser.id}}
+{{currentUser.first_name}}
+{{currentUser.last_name}}
+
+var currentUser = {};
+var users = {};
+
+
+ app.get("/content/:id", function(req, res) {
+    db.users.findOne({
+      where: {
+        id: req.params.id
+      }
+    }).then(function(dbPost) {      
+     currentUser = dbPost.dataValues
+      // console.log("currentUser");
+      // console.log(currentUser);
+    });
+    db.users.findAll({})
+    .then(function(dbPost) {
+      // console.log("dbPost");
+      // console.log(dbPost);
+      // console.log(dbPost.users.length);
+      // console.log(dbPost.users.dataValues.length);
+      // console.log(dbPost.dataValues.length);
+      console.log(dbPost.length);
+      // var junk = dbPost.users;
+      for (var i = 0; i < dbPost.length; i++) {
+      // console.log(dbPost[i].dataValues);
+      users += dbPost[i].dataValues;
+      }
+
+     console.log("users");
+      console.log(users);
+      var data = {
+        users: users,
+        currentUser: currentUser
+      }
+      console.log("data");
+      console.log(data);
+      res.render("content", data);
+    });
+  });
